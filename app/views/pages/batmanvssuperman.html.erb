@@ -1,0 +1,19 @@
+<div id="superman" style="float:left;width:50%;height: 400px;">
+<br><br><br>
+<a href="<%= superman_path %>"><h3>Ir a Superman</h3> </a>
+</div>
+<div id="batman" style="float:left;width:50%;height: 400px;">
+
+<br><br><br>
+<a href="<%= batman_path %>"><h3>Ir a Batman</h3> </a>
+</div>
+
+
+
+
+
+<script>
+ $("#superman").backstretch("<%= asset_path 'superman.jpg' %>");
+ $("#batman").backstretch("<%= asset_path 'batman.jpg' %>");
+</script>
+
