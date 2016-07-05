@@ -1,11 +1,25 @@
 <div id="superman" style="float:left;width:50%;height: 400px;">
-<br><br><br>
+<br>
 <a href="<%= superman_path %>"><h3>Ir a Superman</h3> </a>
+
+<%= form_tag(superman_path, method:"post") do %>
+ <%= email_field_tag(:email) %>
+ <%= submit_tag("Enviar") %>
+<% end %>
+
+<h5 style="color:white"> Lleva <%= @votos_superman %> </h5>
 </div>
 <div id="batman" style="float:left;width:50%;height: 400px;">
 
-<br><br><br>
+<br>
 <a href="<%= batman_path %>"><h3>Ir a Batman</h3> </a>
+<%= form_tag(batman_path, method:"post") do %>
+ <%= email_field_tag(:email) %>
+ <%= submit_tag("Enviar") %>
+<% end %>
+
+<br>
+<h5 style="color:white"> Lleva <%= @votos_batman %> </h5>
 </div>
 
 

@@ -1,10 +1,18 @@
 Rails.application.routes.draw do
+  get 'experiments/page1'
+
+  get 'experiments/page2'
+
+  get 'experiments/page3'
+
   get 'pages/batman'
 
   get '/batman' => 'pages#batman'
+    post '/batman' => 'pages#batman'
  get '/superman' => 'pages#superman'
+  post '/superman' => 'pages#superman'
 
- get  '/batmanvssuperman' =>'pages#batmanvssuperman'
+ get  '/batman-vs-superman' =>'pages#batmanvssuperman'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
