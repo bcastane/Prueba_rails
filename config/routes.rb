@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'experiments/page1'
+  get 'experiments/page1', as: :page1
 
-  get 'experiments/page2'
+  get 'experiments/page2', as: :page2
 
-  get 'experiments/page3'
+  get 'experiments/page3', as: :page3
 
   get 'pages/batman'
 
